@@ -4,39 +4,7 @@
   "description": "",
   "main": "desktop.js",
   "scripts": {
-    "start": "node server.js",
-    "desktop": "nds desktop.js",
-    "electron:mac": "npx electron-builder --macos --x64 -c.mac.identity=null",
-    "electron:win": "npx electron-builder --windows --x64"
-  },
-  "build": {
-    "appId": "io.dolby.spatial-audio",
-    "productName": "Dolby.io Spatial Audio",
-    "electronVersion": "9.4.4",
-    "electronDist": "./node_modules/@dolbyio/native-desktop-sdk/dist",
-    "files": [
-      "src/images/*.png",
-      "src/scripts/*.js",
-      "src/**.*",
-      "desktop.js",
-      "preload.js",
-      "package.json"
-    ],
-    "directories": {
-      "buildResources": ".",
-      "output": "output"
-    },
-    "pkg": {
-      "allowCurrentUserHome": false,
-      "allowAnywhere": false
-    },
-    "mac": {
-      "target": [
-        "dmg",
-        "zip"
-      ],
-      "icon": "src/icon.png"
-    }
+    "start": "node server.js"
   },
   "keywords": [
     "spatial-audio",
