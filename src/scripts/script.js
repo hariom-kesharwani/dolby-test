@@ -236,7 +236,7 @@ $('#btn-join').click(async () => {
  * @returns Access token.
  */
 const getAccessToken = async () => {
-    const url = 'http://localhost:8081/access-token';
+    const url = 'http://localhost:5000/access-token';
     const response = await fetch(url);
     const jwt = await response.json();
     return jwt.access_token;

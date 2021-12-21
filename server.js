@@ -40,7 +40,7 @@ app.get('/access-token', async (request, response) => {
 program.option('-p, --port <portNumber>', 'Port number to start the HTTP server on.');
 program.parse(process.argv);
 
-let portNumber = 8081; // Default port number
+let portNumber = process.env.port || 5000; // Default port number
 const options = program.opts();
 if (options.port) {
     const p = parseInt(options.port, 10);
